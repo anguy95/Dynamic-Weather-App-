@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Weather</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsYehNd8Xj21bLlEHosNiegPnhzprtsgg"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/monkeecreate/jquery.simpleWeather/master/jquery.simpleWeather.min.js" charset="utf-8"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="js/app.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+  <div id="weather-loading"><img src="assets/ring-alt.gif" alt="Loading..." class="loading"><br />Loading...</div>
+  <div class="weather-box hidden">
+    <div class="weather-bg">
+      <img src="" class="weather-icon">
+      <p class="temperature weather"></p>
+      <p class="condition weather"></p>
+      <button id="dropdown" type="button"><i class="fa fa-chevron-down fa-2x"></i></button>
+    </div>
+
+    <div class="forecast hidden">
+      <div id="days">
+        <div class="day" id="day0"></div>
+        <div class="day" id="day1"></div>
+        <div class="day" id="day2"></div>
+        <div class="day" id="day3"></div>
+        <div class="day" id="day4"></div>
+      </div>
+    </div>
+    <div id="bottom-drawer">
+      <div class="location"></div>
+
+      <div class="wind-humid">
+        <div class="wind weather-info">
+          <img class="info-img" src="../assets/weathericons/Wind.svg">
+          <p class="wind-speed"></p>
+        </div>
+
+        <div class="humidity weather-info">
+          <img class="info-img" src="../assets/weathericons/Droplet.svg">
+          <p class="humid-percent"></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
